@@ -10,7 +10,7 @@ This is a backend API OPOWER.
 
 Allows you to compare the consumption of your home's electrical equipment with your friends.
 
-<img src="https://user-images.githubusercontent.com/8668325/36869431-1481a1c0-1d9c-11e8-9aac-412fea73206b.PNG" width="1039" height="945">
+<img src="https://user-images.githubusercontent.com/8668325/36869768-3365deca-1d9d-11e8-8bd9-0fbdcf0519aa.PNG" width="1039" height="945">
 
 ## Getting Started
 
