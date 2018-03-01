@@ -3,12 +3,75 @@
   <component name="ChangeListManager">
     <list default="true" id="b016866e-9312-4509-bb5c-cabdb96f1ae9" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/dao/PersonneDao.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/dao/PersonneDao.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/PersonneCtrl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/ResidenceCtrl.class" afterPath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/ResidenceCtrl.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/dao/PersonneDao.class" afterPath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/dao/PersonneDao.class" />
+      <change beforePath="$PROJECT_DIR$/DOC/allclasses-frame.html" afterPath="$PROJECT_DIR$/DOC/allclasses-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/allclasses-noframe.html" afterPath="$PROJECT_DIR$/DOC/allclasses-noframe.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/Application.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/Application.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/class-use/Application.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/class-use/Application.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/SwaggerConfig.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/SwaggerConfig.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/class-use/SwaggerConfig.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/class-use/SwaggerConfig.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/MainController.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/MainController.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/PersonneCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/PersonneCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/ResidenceCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/ResidenceCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/MainController.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/MainController.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/PersonneCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/PersonneCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/ResidenceCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/ResidenceCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/PersonneDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/PersonneDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/ResidenceDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/ResidenceDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/PersonneDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/PersonneDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/ResidenceDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/ResidenceDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Chauffage.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Chauffage.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/EquipementElec.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/EquipementElec.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Intelligent.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Intelligent.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Personne.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Personne.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Residence.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Residence.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Chauffage.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Chauffage.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/EquipementElec.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/EquipementElec.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Intelligent.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Intelligent.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Personne.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Personne.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Residence.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Residence.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/constant-values.html" afterPath="$PROJECT_DIR$/DOC/constant-values.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/deprecated-list.html" afterPath="$PROJECT_DIR$/DOC/deprecated-list.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/help-doc.html" afterPath="$PROJECT_DIR$/DOC/help-doc.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-1.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-1.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-10.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-10.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-11.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-11.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-12.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-12.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-2.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-2.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-3.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-3.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-4.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-4.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-5.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-5.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-6.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-6.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-7.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-7.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-8.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-8.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-9.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-9.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index.html" afterPath="$PROJECT_DIR$/DOC/index.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/member-search-index.js" afterPath="$PROJECT_DIR$/DOC/member-search-index.js" />
+      <change beforePath="$PROJECT_DIR$/DOC/member-search-index.zip" afterPath="$PROJECT_DIR$/DOC/member-search-index.zip" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-frame.html" afterPath="$PROJECT_DIR$/DOC/overview-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-summary.html" afterPath="$PROJECT_DIR$/DOC/overview-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-tree.html" afterPath="$PROJECT_DIR$/DOC/overview-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/package-search-index.zip" afterPath="$PROJECT_DIR$/DOC/package-search-index.zip" />
+      <change beforePath="$PROJECT_DIR$/DOC/type-search-index.zip" afterPath="$PROJECT_DIR$/DOC/type-search-index.zip" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="385">
-              <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+              <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1109#1110#0" expanded="true" />
@@ -45,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
-              <caret line="76" column="54" lean-forward="true" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+              <caret line="76" column="54" lean-forward="false" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1062#1063#0" expanded="true" />
@@ -494,16 +557,15 @@
       <workItem from="1519911550314" duration="1231000" />
       <workItem from="1519912975861" duration="1641000" />
       <workItem from="1519914680090" duration="2448000" />
-      <workItem from="1519918600995" duration="28192000" />
+      <workItem from="1519918600995" duration="28233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33962000" />
+    <option name="totallyTimeSpent" value="34003000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -521,14 +583,14 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3552492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1041,7 +1103,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="76" column="54" lean-forward="true" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
+          <caret line="76" column="54" lean-forward="false" selection-start-line="76" selection-start-column="54" selection-end-line="76" selection-end-column="54" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1062#1063#0" expanded="true" />
@@ -1053,7 +1115,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="385">
-          <caret line="164" column="32" lean-forward="true" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
+          <caret line="164" column="32" lean-forward="false" selection-start-line="164" selection-start-column="32" selection-end-line="164" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1109#1110#0" expanded="true" />
