@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.util.List;
+
 /**
  * Classe PersonneCtrl.
  * Controleur de la classe Personne.
@@ -22,6 +24,18 @@ public class PersonneCtrl {
   private PersonneDao personneDao;
 
   /**
+   * Fonction qui retourne toutes les personnes.
+   * @return personnes : liste de personnes.
+   */
+  @RequestMapping(
+          value = "/allPerson",
+          method = RequestMethod.GET)
+  @ResponseBody
+  public List<Personne> getAll(){
+    return this.personneDao.getAll();
+  }
+
+  /**
    * Fcontion qui permet de créer une personne et retourne une réponse de confirmation.
    * @param nom : nom de la personne.
    * @param prenom : prénom de la personne.
@@ -29,7 +43,7 @@ public class PersonneCtrl {
    * @return String : message de confirmation.
    */
   @RequestMapping(
-          value = "/create",
+          value = "/createPerson",
           method = RequestMethod.POST,
           params = {"nom", "prenom", "mail"})
   @ResponseBody
@@ -45,12 +59,68 @@ public class PersonneCtrl {
   }
 
   /**
+   * Fonction qui permet d'ajouter un ami à une personne par leur id.
+   * La fonction retourne un message de confirmation.
+   * @param id : id de la personne qui veut un ami.
+   * @param idFriend : id de l'ami.
+   * @return String : message de confirmation.
+   */
+  @RequestMapping(
+          value = "/addFriend",
+          method = RequestMethod.PUT,
+          params = {"id", "idFriend"})
+  @ResponseBody
+  public String addFriend(long id, long idFriend) {
+    try {
+      Personne personne = this.personneDao.getById(id);
+      Personne ami = this.personneDao.getById(idFriend);
+      personne.addAmi(ami);
+      ami.addAmi(personne);
+      personneDao.update(personne);
+      personneDao.update(ami);
+    } catch (Exception exceptCreatPers) {
+      return "controllers/PersonneCtrl/addFriend : Erreur de création de l'ami : "
+              + exceptCreatPers.toString();
+    }
+    return "Création de l'ami réussie !";
+  }
+
+  /**
+   * Fonction qui permet de supprimer un ami à une personne par leur id.
+   * La fonction retourne un message de confirmation.
+   * @param id : id de la personne qui veut supprimer un ami.
+   * @param idFriend : id de l'ami.
+   * @return String : message de confirmation.
+   */
+  @RequestMapping(
+          value = "/deleteFriend",
+          method = RequestMethod.PUT,
+          params = {"id", "idFriend"})
+  @ResponseBody
+  public String deleteFriend(long id, long idFriend) {
+    try {
+      Personne personne = this.personneDao.getById(id);
+      Personne ami = this.personneDao.getById(idFriend);
+      personne.deleteAmi(ami);
+      ami.deleteAmi(personne);
+      personneDao.update(personne);
+      personneDao.update(ami);
+    } catch (Exception exceptCreatPers) {
+      return "controllers/PersonneCtrl/deleteFriend : Erreur de création de l'ami : "
+              + exceptCreatPers.toString();
+    }
+    return "Suppression de l'ami réussie !";
+  }
+
+
+
+  /**
    * Fonction qui permet de supprimer une personne et retourne un message de confirmation.
    * @param id : id de la personne à supprimer.
    * @return String : message de confirmation
    */
   @RequestMapping(
-          value = "/delete",
+          value = "/deletePerson",
           method = RequestMethod.DELETE,
           params = {"id"})
   @ResponseBody
@@ -71,11 +141,11 @@ public class PersonneCtrl {
    * @return id : id de la personne.
    */
   @RequestMapping(
-          value = "/getByMail",
+          value = "/getIdByMail",
           method = RequestMethod.GET,
           params = {"mail"})
   @ResponseBody
-  public String getByEmail(String mail) {
+  public String getIdByEmail(String mail) {
     String id;
     try {
       Personne personne = personneDao.getByEmail(mail);
@@ -88,6 +158,26 @@ public class PersonneCtrl {
   }
 
   /**
+   * Fonction qui retourne la personne avec son id.
+   * @param id : id de la personne
+   * @return Personne : personne.
+   */
+  @RequestMapping(
+          value = "/getPersonById",
+          method = RequestMethod.GET,
+          params = {"id"})
+  @ResponseBody
+  public Personne getById(long id) {
+    Personne personne;
+    try {
+      personne = personneDao.getById(id);
+    } catch (Exception exceptGetBMail) {
+      return null;
+    }
+    return personne;
+  }
+
+  /**
    * Focntion qui met à jours le nom d'une personne dont l'id est passé
    * en paramètre.
    * @param id : id de la personne.
@@ -95,7 +185,7 @@ public class PersonneCtrl {
    * @return String : Message de confirmation.
    */
   @RequestMapping(
-          value = "/update/name",
+          value = "/updatePersonName",
           method = RequestMethod.PUT,
           params = {"nom"})
   @ResponseBody

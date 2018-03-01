@@ -2,7 +2,7 @@ package bzh.dbs.backend.domain;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
-
+import javax.validation.constraints.NotNull;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -27,14 +27,14 @@ public class Personne {
   private String prenom;
   private String mail;
   //private Set<Residence> residences;
-  //private Set<Personne> amis;
+  private Set<Personne> amis;
 
   /**
    * Constructeur 1. Défaut.
    */
   public Personne() {
     super();
-    //this.amis = new HashSet<Personne>();
+    this.amis = new HashSet<Personne>();
     //this.residences = new HashSet<Residence>();
   }
 
@@ -58,7 +58,7 @@ public class Personne {
     this.nom = nom;
     this.prenom = prenom;
     this.mail = mail;
-    //this.amis = new HashSet<Personne>();
+    this.amis = new HashSet<Personne>();
     //this.residences = new HashSet<Residence>();
   }
 
@@ -89,6 +89,7 @@ public class Personne {
    * @return nom : nom de la personne.
    */
   @Column(name = "nom")
+  @NotNull
   public String getNom() {
     return this.nom;
   }
@@ -108,6 +109,7 @@ public class Personne {
    * @return prenom : prénom de la personne.
    */
   @Column(name = "prenom")
+  @NotNull
   public String getPrenom() {
     return this.prenom;
   }
@@ -127,6 +129,7 @@ public class Personne {
    * @return mail : mail de la personne.
    */
   @Column(name = "mail")
+  @NotNull
   public String getMail() {
     return this.mail;
   }
@@ -167,22 +170,22 @@ public class Personne {
    *
    * @return amis : les amis de la personne.
    */
-  /*@ManyToMany(cascade = {CascadeType.ALL})
+  @ManyToMany(cascade = {CascadeType.ALL})
   @JoinTable(name = "personne_amis",
           joinColumns = {@JoinColumn(name = "personne_id")},
           inverseJoinColumns = {@JoinColumn(name = "amis_id")})
   public Set<Personne> getAmis() {
     return this.amis;
-  }*/
+  }
 
   /**
    * Procédure qui permet de modifier la liste d'amis de la personne.
    *
    * @param amis : nouvelle liste d'amis de la personne.
    */
-  /*public void setAmis(Set<Personne> amis) {
+  public void setAmis(Set<Personne> amis) {
     this.amis = amis;
-  }*/
+  }
 
   /**
    * Fonction qui retourne un ami par son id s'il le trouve,
@@ -191,7 +194,7 @@ public class Personne {
    * @param id : id de l'ami.
    * @return Personne : ami de this.
    */
-  /*public Personne getAmi(Long id) {
+  public Personne getAmi(long id) {
     Personne personne;
     Iterator<Personne> it = this.getAmis().iterator();
     while (it.hasNext()) {
@@ -201,5 +204,21 @@ public class Personne {
       }
     }
     return null;
-  }*/
+  }
+
+  /**
+   * Procédure qui permet d'ajouter un ami pour la personne.
+   * @param ami : futur ami de la peronne.
+   */
+  public void addAmi(Personne ami){
+    this.amis.add(ami);
+  }
+
+  /**
+   * Procédure qui permet de supprimer un ami pour la personne.
+   * @param ami : ancien ami de la peronne.
+   */
+  public void deleteAmi(Personne ami){
+    this.amis.remove(ami);
+  }
 }

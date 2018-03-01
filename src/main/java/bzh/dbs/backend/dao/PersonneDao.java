@@ -4,6 +4,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
+
 import bzh.dbs.backend.domain.Personne;
 import org.springframework.stereotype.Repository;
 
@@ -36,6 +37,7 @@ public class PersonneDao {
   /**
    * Fonction qui crée une nouvelle personne et retourne cette
    * dernière.
+   *
    * @return personne : personne ajoutée.
    */
   public void create(Personne personne) {
@@ -46,6 +48,7 @@ public class PersonneDao {
   /**
    * Fonction qui retourne la personne qui a le mail
    * passé en paramètre
+   *
    * @param mail : mail de la personne
    * @return personne : personne qui a le mail.
    */
@@ -59,8 +62,9 @@ public class PersonneDao {
   /**
    * Fonction qui retourne la personne qui a l'id
    * passé en paramètre
+   *
    * @param id : id de la personne
-   * @return personne : personne qui a le mail.
+   * @return personne : personne qui a l'id.
    */
   public Personne getById(long id) {
     return entityManager.find(Personne.class, id);
@@ -68,6 +72,7 @@ public class PersonneDao {
 
   /**
    * Procédure qui permet de supprimer une personne.
+   *
    * @return personne : personne supprimée
    */
   public void delete(Personne personne) {
@@ -80,10 +85,12 @@ public class PersonneDao {
 
   /**
    * Procédure de mise à jours d'une personne.
+   *
    * @param personne : Personne mise à jours.
    */
   public void update(Personne personne) {
     entityManager.merge(personne);
     return;
   }
+
 }
