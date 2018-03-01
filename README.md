@@ -1,4 +1,4 @@
-# Backend OPOWER
+# API / Backend OPOWER
 ## JPA + Hibernate + MySQL + Swagger with Spring Boot
 #### [Istic](https://istic.univ-rennes1.fr/) School project
 

@@ -23,7 +23,6 @@ public class Residence {
   private Long id;
   private double taille;
   private int nbPieces;
-  //private Personne personne;
   //private Set<Chauffage> chauffages;
   //private Set<EquipementElec> equipementElecs;
 
@@ -116,25 +115,6 @@ public class Residence {
   public void setNbPieces(int nbPieces) {
     this.nbPieces = nbPieces;
   }
-
-  /**
-   * Fonction qui retourne la perosnne propriétaire de la résidence
-   *
-   * @return personne : propriétaire de la résidence.
-   */
-  /*@ManyToOne()
-  public Personne getPersonne() {
-    return this.personne;
-  }*/
-
-  /**
-   * Procédure qui modifie le propriétairede la résidence.
-   *
-   * @param personne : propriétaire de la résidence.
-   */
-  /*public void setPersonne(Personne personne) {
-    this.personne = personne;
-  }*/
 
   /**
    * Fonction qui retourne les chauffages de la résidence.

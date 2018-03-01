@@ -168,6 +168,14 @@ public class Personne {
   }
 
   /**
+   * Procédure qui permet d'ajouter une résidence pour la personne.
+   * @param residence : futur residence de la personne.
+   */
+  public void addResidence(Residence residence){
+    this.residences.add(residence);
+  }
+
+  /**
    * Fonction qui retourne l'ensemble d'amis de la personne.
    *
    * @return amis : les amis de la personne.
@@ -210,7 +218,7 @@ public class Personne {
 
   /**
    * Procédure qui permet d'ajouter un ami pour la personne.
-   * @param ami : futur ami de la peronne.
+   * @param ami : futur ami de la personne.
    */
   public void addAmi(Personne ami){
     this.amis.add(ami);

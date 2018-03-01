@@ -34,8 +34,11 @@ j'ai amélioré un peu le digramme par rapport au texte.
 ## Détails des commandes
 
 - On peut créer des personnes et attacher des amis à ces personnes.
-- On peut créer des résidences depuis une personne
-- Des équipements (chauffages ou autre équipements électriques) sont rattachés au résidences
+- On peut créer des résidences depuis une personne.
+- On peut créer une résidence sans personne.
+- On peut rattacher une résidence à une personne.
+- On peut créer des équipements intelligents (chauffages ou autre équipements électriques).
+- On peut rattacher des équipements intelligents à une résidence.
 - On peut supprimer les personnes et garder les résidences au cas où une personne souhaiterai reprendre cette résidence.
 - On supprimer des personnes.
 - On peut supprimer des amis.

@@ -1,7 +1,9 @@
 package bzh.dbs.backend.controllers;
 
 import bzh.dbs.backend.dao.PersonneDao;
+import bzh.dbs.backend.dao.ResidenceDao;
 import bzh.dbs.backend.domain.Personne;
+import bzh.dbs.backend.domain.Residence;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +24,8 @@ public class PersonneCtrl {
   // --- Déclaration des propriétés ---
   @Autowired
   private PersonneDao personneDao;
+  @Autowired
+  private ResidenceDao residenceDao;
 
   /**
    * Fonction qui retourne toutes les personnes.
@@ -62,6 +66,31 @@ public class PersonneCtrl {
    * Fonction qui permet d'ajouter un ami à une personne par leur id.
    * La fonction retourne un message de confirmation.
    * @param id : id de la personne qui veut un ami.
+   * @param idResid : id de la résidence.
+   * @return String : message de confirmation.
+   */
+  @RequestMapping(
+          value = "/addResid",
+          method = RequestMethod.PUT,
+          params = {"id", "idResid"})
+  @ResponseBody
+  public String addResid(long id, long idResid) {
+    try {
+      Personne personne = this.personneDao.getById(id);
+      Residence residence = residenceDao.getById(idResid);
+      personne.addResidence(residence);
+      personneDao.update(personne);
+    } catch (Exception exceptAddResid) {
+      return "controllers/PersonneCtrl/addResid : Erreur d'ajout de la résidence : "
+              + exceptAddResid.toString();
+    }
+    return "Ajout de la résidence réussie !";
+  }
+
+  /**
+   * Fonction qui permet d'ajouter un ami à une personne par leur id.
+   * La fonction retourne un message de confirmation.
+   * @param id : id de la personne qui veut un ami.
    * @param idFriend : id de l'ami.
    * @return String : message de confirmation.
    */
@@ -78,11 +107,11 @@ public class PersonneCtrl {
       ami.addAmi(personne);
       personneDao.update(personne);
       personneDao.update(ami);
-    } catch (Exception exceptCreatPers) {
-      return "controllers/PersonneCtrl/addFriend : Erreur de création de l'ami : "
-              + exceptCreatPers.toString();
+    } catch (Exception exceptAddPers) {
+      return "controllers/PersonneCtrl/addFriend : Erreur de l'ajout de l'ami : "
+              + exceptAddPers.toString();
     }
-    return "Création de l'ami réussie !";
+    return "Ajout de l'ami réussie !";
   }
 
   /**
@@ -105,9 +134,9 @@ public class PersonneCtrl {
       ami.deleteAmi(personne);
       personneDao.update(personne);
       personneDao.update(ami);
-    } catch (Exception exceptCreatPers) {
+    } catch (Exception exceptDelPers) {
       return "controllers/PersonneCtrl/deleteFriend : Erreur de création de l'ami : "
-              + exceptCreatPers.toString();
+              + exceptDelPers.toString();
     }
     return "Suppression de l'ami réussie !";
   }
