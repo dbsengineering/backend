@@ -10,6 +10,8 @@ This is a backend API OPOWER.
 
 Allows you to compare the consumption of your home's electrical equipment with your friends.
 
+<img src="https://user-images.githubusercontent.com/8668325/36869431-1481a1c0-1d9c-11e8-9aac-412fea73206b.PNG" width="1039" height="945">
+
 ## Getting Started
 
 Download this project. open with IntelliJ. Change database name in resources/application.properties
@@ -34,20 +36,6 @@ You must to make an MySql database(empty). You can editing the application.prope
 - Run Main class
 
 - open Postman or your navigator (here : [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html))
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-
-### And coding style tests
-
-Explain what these tests test and why
-
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 

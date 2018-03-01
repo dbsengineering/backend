@@ -27,22 +27,22 @@ j'ai amélioré un peu le digramme par rapport au texte.
 - Une personne peut avoir 0 ou plusieurs amis.
 - Une personne peut avoir 0 ou plusieurs résidences.
 - Une résidence ne voit pas son propriétaire (car flêche sens unique sur le diagramme).
-- une résidence peut avoir 0 ou plusieurs équipements intelligents (Chauffages et/ou Equipements électriques).
+- Une résidence peut avoir 0 ou plusieurs équipements intelligents (Chauffages et/ou Equipements électriques).
 - Un équipement intelligent ne peut pas voir le résidence (flêche sens unique sur le diagramme).
 - Chauffage et 2quipement électrique héritent de Intelligent.
 
 ## Détails des commandes
 
-- on peut créer des personnes et attacher des amis à ces personnes.
+- On peut créer des personnes et attacher des amis à ces personnes.
 - On peut créer des résidences depuis une personne
-- des équipements (chauffages ou autre équipements électriques) sont rattachés au résidences
-- on peut supprimer les personnes et garder les résidences au cas où une personne souhaiterai reprendre cette résidence.
-- on supprimer des personnes.
-- on peut supprimer des amis.
-- on peut ajouter ou supprimer des éqquipements (chauffages ou autre équipements électriques)
-- on peut afficher la liste de toutes les personnes.
-- on peut afficher la liste de toutes les résidences.
-- on peut afficer les lsite des tous les équipements (chauffages ou/et autre équipements électriques).
+- Des équipements (chauffages ou autre équipements électriques) sont rattachés au résidences
+- On peut supprimer les personnes et garder les résidences au cas où une personne souhaiterai reprendre cette résidence.
+- On supprimer des personnes.
+- On peut supprimer des amis.
+- On peut ajouter ou supprimer des éqquipements (chauffages ou autre équipements électriques)
+- On peut afficher la liste de toutes les personnes.
+- On peut afficher la liste de toutes les résidences.
+- On peut afficer les lsite des tous les équipements (chauffages ou/et autre équipements électriques).
 
 ## Authors
 
