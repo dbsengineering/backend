@@ -176,6 +176,14 @@ public class Personne {
   }
 
   /**
+   * Procédure qui permet de supprimer une résidence de la personne.
+   * @param residence : résidence à supprimer.
+   */
+  public void deleteResidence(Residence residence){
+    this.residences.remove(residence);
+  }
+
+  /**
    * Fonction qui retourne l'ensemble d'amis de la personne.
    *
    * @return amis : les amis de la personne.

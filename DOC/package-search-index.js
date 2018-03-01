@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"bzh.dbs.backend"},{"l":"bzh.dbs.backend.config"},{"l":"bzh.dbs.backend.controllers"},{"l":"bzh.dbs.backend.dao"},{"l":"bzh.dbs.backend.domain"}]
