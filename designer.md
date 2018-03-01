@@ -22,7 +22,7 @@ j'ai amélioré un peu le digramme par rapport au texte.
 
 ## Spécifications
 
-<img src="https://user-images.githubusercontent.com/8668325/36869431-1481a1c0-1d9c-11e8-9aac-412fea73206b.PNG" width="400" height="790">
+<img src="https://user-images.githubusercontent.com/8668325/36869431-1481a1c0-1d9c-11e8-9aac-412fea73206b.PNG" width="706" height="314">
 
 - Une personne peut avoir 0 ou plusieurs amis.
 - Une personne peut avoir 0 ou plusieurs résidences.

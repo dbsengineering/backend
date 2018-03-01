@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b016866e-9312-4509-bb5c-cabdb96f1ae9" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/designer.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Chauffage.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/EquipementElec.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Intelligent.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Personne.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Personne.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/ResidenceCtrl.class" afterPath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/ResidenceCtrl.class" />
+      <change beforePath="$PROJECT_DIR$/designer.md" afterPath="$PROJECT_DIR$/designer.md" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,8 +39,8 @@
         <entry file="file://$PROJECT_DIR$/designer.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="204">
-                <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <first_editor relative-caret-position="289">
+                <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -538,12 +530,12 @@
       <workItem from="1519911550314" duration="1231000" />
       <workItem from="1519912975861" duration="1641000" />
       <workItem from="1519914680090" duration="2448000" />
-      <workItem from="1519918600995" duration="18438000" />
+      <workItem from="1519918600995" duration="18565000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24208000" />
+    <option name="totallyTimeSpent" value="24335000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1081,8 +1073,8 @@
     <entry file="file://$PROJECT_DIR$/designer.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="204">
-            <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <first_editor relative-caret-position="289">
+            <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             <folding />
           </first_editor>
           <second_editor />
