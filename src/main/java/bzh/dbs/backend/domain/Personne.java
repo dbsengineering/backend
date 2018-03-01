@@ -178,9 +178,10 @@ public class Personne {
   /**
    * Procédure qui permet de supprimer une résidence de la personne.
    * @param residence : résidence à supprimer.
+   * @return boolean : retourne vrai ou faux si la résidence est bien supprimée.
    */
-  public void deleteResidence(Residence residence){
-    this.residences.remove(residence);
+  public boolean deleteResidence(Residence residence){
+    return this.residences.remove(residence);
   }
 
   /**
@@ -235,8 +236,9 @@ public class Personne {
   /**
    * Procédure qui permet de supprimer un ami pour la personne.
    * @param ami : ancien ami de la peronne.
+   * @return boolean : retourne vrai ou faux si l'ami est bien supprimé.
    */
-  public void deleteAmi(Personne ami){
-    this.amis.remove(ami);
+  public boolean deleteAmi(Personne ami){
+    return this.amis.remove(ami);
   }
 }

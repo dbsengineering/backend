@@ -75,7 +75,7 @@ public class PersonneCtrl {
    */
   @RequestMapping(
           value = "/addResid",
-          method = RequestMethod.PUT,
+          method = RequestMethod.POST,
           params = {"id", "idResid"})
   @ResponseBody
   public String addResid(long id, long idResid) {
@@ -100,7 +100,7 @@ public class PersonneCtrl {
    */
   @RequestMapping(
           value = "/addFriend",
-          method = RequestMethod.PUT,
+          method = RequestMethod.POST,
           params = {"id", "idFriend"})
   @ResponseBody
   public String addFriend(long id, long idFriend) {
@@ -127,14 +127,16 @@ public class PersonneCtrl {
    */
   @RequestMapping(
           value = "/deleteFriend",
-          method = RequestMethod.PUT,
+          method = RequestMethod.DELETE,
           params = {"id", "idFriend"})
   @ResponseBody
   public String deleteFriend(long id, long idFriend) {
     try {
       Personne personne = this.personneDao.getById(id);
       Personne ami = this.personneDao.getById(idFriend);
-      personne.deleteAmi(ami);
+      if(!personne.deleteAmi(ami)){
+        return "L'ami ne fait pas parti de vos connaissances !";
+      }
       ami.deleteAmi(personne);
       personneDao.update(personne);
       personneDao.update(ami);
@@ -179,11 +181,12 @@ public class PersonneCtrl {
   @ResponseBody
   public String deleteResPers(long id, long idRes) {
     try {
-      Set<Residence> lstResid = getResidByIdPers(id);
+      Personne personne = this.personneDao.getById(id);
       Residence residence = residenceDao.getById(idRes);
-      if(lstResid.contains(residence)){
-        residenceDao.delete(residence);
+      if(!personne.deleteResidence(residence)){
+        return "la résidence ne fait pas parti de vos résidences !";
       }
+      personneDao.update(personne);
     } catch (Exception exceptDelRespers) {
       return "controllers/PersonneCtrl/deleteResPerse : Erreur de suppresion de résidence de la personne : "
               + exceptDelRespers.toString();
