@@ -112,8 +112,6 @@ public class PersonneCtrl {
     return "Suppression de l'ami réussie !";
   }
 
-
-
   /**
    * Fonction qui permet de supprimer une personne et retourne un message de confirmation.
    * @param id : id de la personne à supprimer.

@@ -44,7 +44,7 @@ public class ResidenceCtrl {
   @RequestMapping(
           value = "/createResid",
           method = RequestMethod.POST,
-          params = {"taille", "nbPieces", "mail"})
+          params = {"taille", "nbPieces"})
   @ResponseBody
   public String create(double taille, int nbPieces) {
     try {

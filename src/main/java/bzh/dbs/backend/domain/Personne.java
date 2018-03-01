@@ -26,7 +26,7 @@ public class Personne {
   private String nom;
   private String prenom;
   private String mail;
-  //private Set<Residence> residences;
+  private Set<Residence> residences;
   private Set<Personne> amis;
 
   /**
@@ -35,7 +35,7 @@ public class Personne {
   public Personne() {
     super();
     this.amis = new HashSet<Personne>();
-    //this.residences = new HashSet<Residence>();
+    this.residences = new HashSet<Residence>();
   }
 
   /**
@@ -45,6 +45,8 @@ public class Personne {
    */
   public Personne(long id) {
     this.id = id;
+    this.amis = new HashSet<Personne>();
+    this.residences = new HashSet<Residence>();
   }
 
   /**
@@ -59,7 +61,7 @@ public class Personne {
     this.prenom = prenom;
     this.mail = mail;
     this.amis = new HashSet<Personne>();
-    //this.residences = new HashSet<Residence>();
+    this.residences = new HashSet<Residence>();
   }
 
   /**
@@ -148,22 +150,22 @@ public class Personne {
    *
    * @return residences : ensemble de résidences de la personne.
    */
-  /*@OneToMany(cascade = {CascadeType.ALL})
+  @OneToMany(cascade = {CascadeType.ALL})
   @JoinTable(name = "personne_residence",
           joinColumns = {@JoinColumn(name = "personne_id")},
           inverseJoinColumns = {@JoinColumn(name = "residence_id")})
   public Set<Residence> getResidences() {
     return this.residences;
-  }*/
+  }
 
   /**
    * Procédure qui permet de modifier l'ensemble des résidences de la personne.
    *
    * @param residences : nouvel ensemble de résidences de la personne.
    */
-  /*public void setResidences(Set<Residence> residences) {
+  public void setResidences(Set<Residence> residences) {
     this.residences = residences;
-  }*/
+  }
 
   /**
    * Fonction qui retourne l'ensemble d'amis de la personne.
