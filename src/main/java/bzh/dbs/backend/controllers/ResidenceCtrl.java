@@ -1,14 +1,14 @@
 package bzh.dbs.backend.controllers;
 
-import bzh.dbs.backend.domain.Residence;
 import bzh.dbs.backend.dao.ResidenceDao;
+import bzh.dbs.backend.domain.Residence;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.List;
 
 /**
  * Classe ResidenceCtrl.
@@ -31,7 +31,7 @@ public class ResidenceCtrl {
           value = "/allResid",
           method = RequestMethod.GET)
   @ResponseBody
-  public List<Residence> getAll(){
+  public List<Residence> getAll() {
     return this.residenceDao.getAll();
   }
 
@@ -108,17 +108,43 @@ public class ResidenceCtrl {
   @RequestMapping(
           value = "/updateTaille",
           method = RequestMethod.PUT,
-          params = {"nom"})
+          params = {"id", "taille"})
   @ResponseBody
-  public String updateName(long id, double taille) {
+  public String updateTaille(long id, double taille) {
     try {
       Residence residence = residenceDao.getById(id);
       residence.setTaille(taille);
       residenceDao.update(residence);
-    } catch (Exception exceptUpdName) {
-      return "controllers/ResidenceCtrl/delete : Erreur de mise à jours du nom : "
-              + exceptUpdName.toString();
+    } catch (Exception exceptUpTaille) {
+      return "controllers/ResidenceCtrl/updateTaille : Erreur de mise à jours taille résidence : "
+              + exceptUpTaille.toString();
     }
-    return "Mise à jours du nom réussite !";
+    return "Mise à jours de la taille réussite !";
+  }
+
+  /**
+   * Focntion qui met à jours une residence dont l'id est passé
+   * en paramètre.
+   * @param id : id de la residence.
+   * @param taille : nouvelle taille de la residence.
+   * @param nbPieces : nombre de pièces de la résidence.
+   * @return String : Message de confirmation.
+   */
+  @RequestMapping(
+          value = "/updateResid",
+          method = RequestMethod.PUT,
+          params = {"id", "taille", "nbPieces"})
+  @ResponseBody
+  public String updateResid(long id, double taille, int nbPieces) {
+    try {
+      Residence residence = residenceDao.getById(id);
+      residence.setTaille(taille);
+      residence.setNbPieces(nbPieces);
+      residenceDao.update(residence);
+    } catch (Exception exceptUpdResid) {
+      return "controllers/ResidenceCtrl/updateResid : Erreur de mise à jours de la résidence : "
+              + exceptUpdResid.toString();
+    }
+    return "Mise à jours de la résidence réussite !";
   }
 }

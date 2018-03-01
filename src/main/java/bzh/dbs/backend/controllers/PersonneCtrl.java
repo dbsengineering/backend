@@ -4,13 +4,17 @@ import bzh.dbs.backend.dao.PersonneDao;
 import bzh.dbs.backend.dao.ResidenceDao;
 import bzh.dbs.backend.domain.Personne;
 import bzh.dbs.backend.domain.Residence;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import java.util.List;
+
 
 /**
  * Classe PersonneCtrl.
@@ -35,7 +39,7 @@ public class PersonneCtrl {
           value = "/allPerson",
           method = RequestMethod.GET)
   @ResponseBody
-  public List<Personne> getAll(){
+  public List<Personne> getAll() {
     return this.personneDao.getAll();
   }
 
@@ -163,6 +167,31 @@ public class PersonneCtrl {
   }
 
   /**
+   * Fonction qui permet de supprimer une résidence et retourne un message de confirmation.
+   * @param id : id de la personne qui possede la résidence.
+   * @param idRes : id de la résidence à supprimer de la personne.
+   * @return String : message de confirmation
+   */
+  @RequestMapping(
+          value = "/deleteResPers",
+          method = RequestMethod.DELETE,
+          params = {"id", "idRes"})
+  @ResponseBody
+  public String deleteResPers(long id, long idRes) {
+    try {
+      Set<Residence> lstResid = getResidByIdPers(id);
+      Residence residence = residenceDao.getById(idRes);
+      if(lstResid.contains(residence)){
+        residenceDao.delete(residence);
+      }
+    } catch (Exception exceptDelRespers) {
+      return "controllers/PersonneCtrl/deleteResPerse : Erreur de suppresion de résidence de la personne : "
+              + exceptDelRespers.toString();
+    }
+    return "Suppression de la résidence de la personne réussie !";
+  }
+
+  /**
    * Fonction qui retourne l'id de la personne avec son mail.
    * @param mail : mail de la personne
    * @return id : id de la personne.
@@ -178,7 +207,7 @@ public class PersonneCtrl {
       Personne personne = personneDao.getByEmail(mail);
       id = String.valueOf(personne.getId());
     } catch (Exception exceptGetBMail) {
-      return "controllers/PersonneCtrl/delete : Mail de la personne introuvable : "
+      return "controllers/PersonneCtrl/getIdByEmail : Mail de la personne introuvable : "
               + exceptGetBMail.toString();
     }
     return "L'id de la personne du mail est : " + id;
@@ -205,6 +234,47 @@ public class PersonneCtrl {
   }
 
   /**
+   * Fonction qui retourne la liste de résidences d'une personne
+   * avec son id.
+   * @param id : id de la personne
+   * @return residences : liste de réssidences.
+   */
+  @RequestMapping(
+          value = "/getResidByIdPers",
+          method = RequestMethod.GET,
+          params = {"id"})
+  @ResponseBody
+  public Set<Residence> getResidByIdPers(long id) {
+    Personne personne;
+    try {
+      personne = personneDao.getById(id);
+    } catch (Exception exceptGetBMail) {
+      return null;
+    }
+    return personne.getResidences();
+  }
+
+  /**
+   * Fonction qui retourne la liste des amis d'une personne avec son id.
+   * @param id : id de la personne
+   * @return amis : liste d'amis d'une personne.
+   */
+  @RequestMapping(
+          value = "/getFriendsByIdPers",
+          method = RequestMethod.GET,
+          params = {"id"})
+  @ResponseBody
+  public Set<Personne> getFriendsByIdPers(long id) {
+    Personne personne;
+    try {
+      personne = personneDao.getById(id);
+    } catch (Exception exceptGetBMail) {
+      return null;
+    }
+    return personne.getAmis();
+  }
+
+  /**
    * Focntion qui met à jours le nom d'une personne dont l'id est passé
    * en paramètre.
    * @param id : id de la personne.
@@ -222,10 +292,86 @@ public class PersonneCtrl {
       personne.setNom(nom);
       personneDao.update(personne);
     } catch (Exception exceptUpdName) {
-      return "controllers/PersonneCtrl/delete : Erreur de mise à jours du nom : "
+      return "controllers/PersonneCtrl/updateName : Erreur de mise à jours du nom : "
               + exceptUpdName.toString();
     }
     return "Mise à jours du nom réussite !";
+  }
+
+  /**
+   * Focntion qui met à jours le prénom d'une personne dont l'id est passé
+   * en paramètre.
+   * @param id : id de la personne.
+   * @param prenom : nouveau prenom de la personne.
+   * @return String : Message de confirmation.
+   */
+  @RequestMapping(
+          value = "/updatePersonPrenom",
+          method = RequestMethod.PUT,
+          params = {"prenom"})
+  @ResponseBody
+  public String updatePrenom(long id, String prenom) {
+    try {
+      Personne personne = personneDao.getById(id);
+      personne.setPrenom(prenom);
+      personneDao.update(personne);
+    } catch (Exception exceptUpdName) {
+      return "controllers/PersonneCtrl/updatePrenom : Erreur de mise à jours du prénom : "
+              + exceptUpdName.toString();
+    }
+    return "Mise à jours du prénom réussite !";
+  }
+
+  /**
+   * Focntion qui met à jours le mail d'une personne dont l'id est passé
+   * en paramètre.
+   * @param id : id de la personne.
+   * @param mail : nouveau mail de la personne.
+   * @return String : Message de confirmation.
+   */
+  @RequestMapping(
+          value = "/updatePersonMail",
+          method = RequestMethod.PUT,
+          params = {"mail"})
+  @ResponseBody
+  public String updateMail(long id, String mail) {
+    try {
+      Personne personne = personneDao.getById(id);
+      personne.setMail(mail);
+      personneDao.update(personne);
+    } catch (Exception exceptUpdName) {
+      return "controllers/PersonneCtrl/updateMail : Erreur de mise à jours du mail : "
+              + exceptUpdName.toString();
+    }
+    return "Mise à jours du mail réussite !";
+  }
+
+  /**
+   * Focntion qui met à jours une personne dont l'id est passé
+   * en paramètre.
+   * @param id : id de la personne.
+   * @param nom : nouveau nom de la personne.
+   * @param prenom : nouveau prénom de la personne.
+   * @param mail : nouveau mail de la personne.
+   * @return String : Message de confirmation.
+   */
+  @RequestMapping(
+          value = "/updatePerson",
+          method = RequestMethod.PUT,
+          params = {"nom", "prenom", "mail"})
+  @ResponseBody
+  public String updatePerson(long id, String nom, String prenom, String mail) {
+    try {
+      Personne personne = personneDao.getById(id);
+      personne.setNom(nom);
+      personne.setPrenom(prenom);
+      personne.setMail(mail);
+      personneDao.update(personne);
+    } catch (Exception exceptUpdpers) {
+      return "controllers/PersonneCtrl/updatePerson : Erreur de mise à jours de la personne : "
+              + exceptUpdpers.toString();
+    }
+    return "Mise à jours de la personne réussite !";
   }
 
 

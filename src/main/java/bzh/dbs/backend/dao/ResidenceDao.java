@@ -1,11 +1,12 @@
 package bzh.dbs.backend.dao;
 
+import bzh.dbs.backend.domain.Residence;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
-import bzh.dbs.backend.domain.Residence;
 import org.springframework.stereotype.Repository;
+
 
 /**
  * Classe ResidenceDao
@@ -36,8 +37,8 @@ public class ResidenceDao {
   /**
    * Fonction qui crée une nouvelle residence et retourne cette
    * dernière.
-   *
-   * @return residence : residence ajoutée.
+   * @param residence : résidence à créer.
+   * @return
    */
   public void create(Residence residence) {
     entityManager.persist(residence);
@@ -46,9 +47,9 @@ public class ResidenceDao {
 
   /**
    * Fonction qui retourne la residence qui a l'id
-   * passé en paramètre
+   * passé en paramètre.
    *
-   * @param id : id de la residence
+   * @param id : id de la residence.
    * @return residence : residence qui a l'id.
    */
   public Residence getById(long id) {
@@ -57,14 +58,15 @@ public class ResidenceDao {
 
   /**
    * Procédure qui permet de supprimer une residence.
-   *
-   * @return residence : residence supprimée
+   * @param residence : résidence à supprimer.
+   * @return
    */
-  public void delete(Residence personne) {
-    if (entityManager.contains(personne))
-      entityManager.remove(personne);
-    else
-      entityManager.remove(entityManager.merge(personne));
+  public void delete(Residence residence) {
+    if (entityManager.contains(residence)) {
+      entityManager.remove(residence);
+    } else {
+      entityManager.remove(entityManager.merge(residence));
+    }
     return;
   }
 

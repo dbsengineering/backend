@@ -6,6 +6,7 @@ import javax.persistence.PersistenceContext;
 import javax.transaction.Transactional;
 
 import bzh.dbs.backend.domain.Personne;
+import bzh.dbs.backend.domain.Residence;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -32,6 +33,18 @@ public class PersonneDao {
   @SuppressWarnings("unchecked")
   public List<Personne> getAll() {
     return entityManager.createQuery("from Personne").getResultList();
+  }
+
+  /**
+   * Fonction qui retourne la résidence de la personne par l'id passé
+   * en paramètre.
+   * @param id : id de la résidence.
+   * @return residence : résidence de la personne.
+   */
+  public Residence getResid(long id){
+    return (Residence) entityManager.createQuery("from Residence where id = :id")
+            .setParameter("id", id)
+            .getSingleResult();
   }
 
   /**

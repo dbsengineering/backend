@@ -2,9 +2,9 @@ package bzh.dbs.backend.domain;
 
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
-import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 
 /**
@@ -98,7 +98,6 @@ public class Residence {
 
   /**
    * Fonction qui retourne le nombre de pièces de la résidence.
-   *
    * @return nbPieces : nombre de pièces de la résidence.
    */
   @NotNull
