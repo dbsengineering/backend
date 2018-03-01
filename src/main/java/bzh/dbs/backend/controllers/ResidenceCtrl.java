@@ -1,6 +1,8 @@
 package bzh.dbs.backend.controllers;
 
+import bzh.dbs.backend.dao.PersonneDao;
 import bzh.dbs.backend.dao.ResidenceDao;
+import bzh.dbs.backend.domain.Personne;
 import bzh.dbs.backend.domain.Residence;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +24,8 @@ public class ResidenceCtrl {
   // --- Déclaration des propriétés ---
   @Autowired
   private ResidenceDao residenceDao;
+  @Autowired
+  private PersonneDao personneDao;
 
   /**
    * Fonction qui retourne toutes les residences.
@@ -65,11 +69,16 @@ public class ResidenceCtrl {
   @RequestMapping(
           value = "/deleteResid",
           method = RequestMethod.DELETE,
-          params = {"id"})
+          params = {"id", "idPers"})
   @ResponseBody
-  public String delete(long id) {
+  public String delete(long id, long idPers) {
     try {
-      Residence residence = new Residence(id);
+      Residence residence = residenceDao.getById(id);
+      Personne personne = personneDao.getById(idPers);
+      if(!personne.deleteResidence(residence)){
+        return "la résidence ne fait pas parti de vos résidences !";
+      }
+      personneDao.update(personne);
       residenceDao.delete(residence);
     } catch (Exception exceptDeletepers) {
       return "controllers/ResidenceCtrl/delete : Erreur de suppresion de la residence : "

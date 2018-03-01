@@ -160,6 +160,11 @@ public class PersonneCtrl {
   public String delete(long id) {
     try {
       Personne personne = new Personne(id);
+      Set<Personne> lstAmis = personne.getAmis();
+      for (Personne ami:lstAmis) {
+        ami.deleteAmi(personne);
+        personneDao.update(ami);
+      }
       personneDao.delete(personne);
     } catch (Exception exceptDeletepers) {
       return "controllers/PersonneCtrl/delete : Erreur de suppresion de la personne : "

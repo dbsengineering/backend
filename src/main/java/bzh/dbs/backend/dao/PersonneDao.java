@@ -36,18 +36,6 @@ public class PersonneDao {
   }
 
   /**
-   * Fonction qui retourne la résidence de la personne par l'id passé
-   * en paramètre.
-   * @param id : id de la résidence.
-   * @return residence : résidence de la personne.
-   */
-  public Residence getResid(long id){
-    return (Residence) entityManager.createQuery("from Residence where id = :id")
-            .setParameter("id", id)
-            .getSingleResult();
-  }
-
-  /**
    * Fonction qui crée une nouvelle personne et retourne cette
    * dernière.
    *
