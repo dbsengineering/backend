@@ -4,8 +4,6 @@ import bzh.dbs.backend.dao.PersonneDao;
 import bzh.dbs.backend.dao.ResidenceDao;
 import bzh.dbs.backend.domain.Personne;
 import bzh.dbs.backend.domain.Residence;
-
-import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -67,7 +65,7 @@ public class PersonneCtrl {
   }
 
   /**
-   * Fonction qui permet d'ajouter un ami à une personne par leur id.
+   * Fonction qui permet d'ajouter une résidence à une personne par leur id.
    * La fonction retourne un message de confirmation.
    * @param id : id de la personne qui veut un ami.
    * @param idResid : id de la résidence.
@@ -159,7 +157,7 @@ public class PersonneCtrl {
   @ResponseBody
   public String delete(long id) {
     try {
-      Personne personne = new Personne(id);
+      Personne personne = personneDao.getById(id);
       Set<Personne> lstAmis = personne.getAmis();
       for (Personne ami:lstAmis) {
         ami.deleteAmi(personne);
@@ -292,7 +290,7 @@ public class PersonneCtrl {
   @RequestMapping(
           value = "/updatePersonName",
           method = RequestMethod.PUT,
-          params = {"nom"})
+          params = {"id", "nom"})
   @ResponseBody
   public String updateName(long id, String nom) {
     try {
@@ -316,7 +314,7 @@ public class PersonneCtrl {
   @RequestMapping(
           value = "/updatePersonPrenom",
           method = RequestMethod.PUT,
-          params = {"prenom"})
+          params = {"id", "prenom"})
   @ResponseBody
   public String updatePrenom(long id, String prenom) {
     try {
@@ -340,7 +338,7 @@ public class PersonneCtrl {
   @RequestMapping(
           value = "/updatePersonMail",
           method = RequestMethod.PUT,
-          params = {"mail"})
+          params = {"id", "mail"})
   @ResponseBody
   public String updateMail(long id, String mail) {
     try {
@@ -366,7 +364,7 @@ public class PersonneCtrl {
   @RequestMapping(
           value = "/updatePerson",
           method = RequestMethod.PUT,
-          params = {"nom", "prenom", "mail"})
+          params = {"id", "nom", "prenom", "mail"})
   @ResponseBody
   public String updatePerson(long id, String nom, String prenom, String mail) {
     try {
@@ -381,6 +379,4 @@ public class PersonneCtrl {
     }
     return "Mise à jours de la personne réussite !";
   }
-
-
 }
