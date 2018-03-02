@@ -44,6 +44,7 @@ public class Personne {
    * @param id : id de la personne.
    */
   public Personne(long id) {
+    super();
     this.id = id;
     this.amis = new HashSet<Personne>();
     this.residences = new HashSet<Residence>();
@@ -57,6 +58,7 @@ public class Personne {
    * @param mail   : mail de la personne.
    */
   public Personne(String nom, String prenom, String mail) {
+    super();
     this.nom = nom;
     this.prenom = prenom;
     this.mail = mail;

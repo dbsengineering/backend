@@ -21,14 +21,38 @@ public class Intelligent {
 
   // --- Déclaration des propriétées ---
   private Long id;
+  private String nom;
   private double heureParJour;
   private int jourParan;
   private double watt;
 
   /**
-   * Constructeur.
+   * Constructeur 1.
    */
   public Intelligent() {
+  }
+
+  /**
+   * Constructeur 2. Avec paramètres.
+   * @param nom : nom de l'appareil.
+   * @param heureParJour : heures de fonctionnement de l'appareil par jour.
+   * @param jourParan : jours de fonctionnement de l'appareil par année.
+   * @param watt : puissance de l'appareil en watt.
+   */
+  public Intelligent(String nom, double heureParJour, int jourParan, double watt){
+    super();
+    this.nom = nom;
+    this.heureParJour = heureParJour;
+    this.jourParan = jourParan;
+    this.watt = watt;
+  }
+
+  /**
+   * Fonction qui retourne la moyenne de consommation d'un appareil.
+   * @return average : moyenne de consommation.
+   */
+  public Double calculMoyen() {
+    return heureParJour * jourParan * (watt / 1000);
   }
 
   /**
@@ -50,6 +74,22 @@ public class Intelligent {
    */
   public void setId(Long id) {
     this.id = id;
+  }
+
+  /**
+   * Fonction qui retourne le nom de l'appareil.
+   * @return nom : nom de l'appareil.
+   */
+  public String getNom() {
+    return nom;
+  }
+
+  /**
+   * Procédure qui permet de modifier le nom de l'appareil.
+   * @param nom : nom de l'appareil.
+   */
+  public void setNom(String nom) {
+    this.nom = nom;
   }
 
   /**

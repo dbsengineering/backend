@@ -6,6 +6,8 @@ import javax.persistence.*;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Classe Residence.
@@ -23,14 +25,15 @@ public class Residence {
   private Long id;
   private double taille;
   private int nbPieces;
-  //private Set<Chauffage> chauffages;
+  private Set<Chauffage> chauffages;
   //private Set<EquipementElec> equipementElecs;
 
   /**
    * Constructeur 1. Défaut.
    */
   public Residence() {
-    //this.chauffages = new HashSet<Chauffage>();
+    super();
+    this.chauffages = new HashSet<Chauffage>();
     //this.equipementElecs = new HashSet<EquipementElec>();
   }
 
@@ -38,6 +41,7 @@ public class Residence {
    * Constructeur 2. Id.
    */
   public Residence(long id) {
+    super();
     this.id = id;
   }
 
@@ -51,7 +55,7 @@ public class Residence {
     super();
     this.taille = taille;
     this.nbPieces = nbPieces;
-    //this.chauffages = new HashSet<Chauffage>();
+    this.chauffages = new HashSet<Chauffage>();
     //this.equipementElecs = new HashSet<EquipementElec>();
   }
 
@@ -120,39 +124,39 @@ public class Residence {
    *
    * @return chauffages : liste de chauffages de la résidence.
    */
-  /*@OneToMany(cascade = {CascadeType.ALL})
+  @OneToMany(cascade = {CascadeType.ALL})
   @JoinTable(name = "residence_chauffage",
           joinColumns = {@JoinColumn(name = "residence_id")},
           inverseJoinColumns = {@JoinColumn(name = "chauffage_id")})
-  public Set<Chauffage> getIntelligents() {
+  public Set<Chauffage> getChauffage() {
     return this.chauffages;
-  }*/
+  }
 
   /**
    * Procédure qui modifie la liste des chauffages de la résidence.
    *
    * @param chauffages : liste de chauffages de la résidence.
    */
-  /*public void setIntelligents(Set<Chauffage> chauffages) {
+  public void setChauffages(Set<Chauffage> chauffages) {
     this.chauffages = chauffages;
-  }*/
+  }
 
   /**
    * Procédure qui ajoute un chauffage à la résidence
    *
    * @param chauffage : chauffage à ajouter
    */
-  /*public void addChauffage(Chauffage chauffage) {
+  public void addChauffage(Chauffage chauffage) {
     this.chauffages.add(chauffage);
-  }*/
+  }
 
   /**
    * Procédure qui permet de supprimer un chauffage.
    * @param chauffage : chauffage.
    */
-  /*public void deleteIntelligent(Chauffage chauffage){
+  public void deleteChauffage(Chauffage chauffage){
     this.chauffages.remove(chauffage);
-  }*/
+  }
 
   /**
    * Fonction qui retourne la liste d'équipements électriques de la résidence.

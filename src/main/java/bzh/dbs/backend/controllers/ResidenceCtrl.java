@@ -62,6 +62,31 @@ public class ResidenceCtrl {
   }
 
   /**
+   * Fonction qui permet d'ajouter un chauffage à une résidence par leur id.
+   * La fonction retourne un message de confirmation.
+   * @param id : id de la résidence.
+   * @param idChauff: id du chauffage.
+   * @return String : message de confirmation.
+   */
+  @RequestMapping(
+          value = "/addChauffage",
+          method = RequestMethod.POST,
+          params = {"id", "iChauff"})
+  @ResponseBody
+  public String addChauffage(long id, long idChauff) {
+    try {
+      Residence residence = residenceDao.getById(id);
+      //Chauffage chauffage = chauffage
+      //residence.addResidence(residence);
+      //personneDao.update(personne);
+    } catch (Exception exceptAddChauffage) {
+      return "controllers/ResidenceCtrl/addChauffage : Erreur d'ajout du chauffage : "
+              + exceptAddChauffage.toString();
+    }
+    return "Ajout du chauffage réussie !";
+  }
+
+  /**
    * Fonction qui permet de supprimer une residence et retourne un message de confirmation.
    * @param id : id de la residence à supprimer.
    * @return String : message de confirmation
