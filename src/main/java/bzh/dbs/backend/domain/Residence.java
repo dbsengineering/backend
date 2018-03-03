@@ -128,7 +128,7 @@ public class Residence {
   @JoinTable(name = "residence_chauffage",
           joinColumns = {@JoinColumn(name = "residence_id")},
           inverseJoinColumns = {@JoinColumn(name = "chauffage_id")})
-  public Set<Chauffage> getChauffage() {
+  public Set<Chauffage> getChauffages() {
     return this.chauffages;
   }
 
