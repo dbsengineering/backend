@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Classe MainController.
@@ -39,7 +40,6 @@ public class MainController {
   private List<Residence> lstResidences;
   private List<Chauffage> lstChauffages;
   private List<EquipementElec> lstEquips;
-  private long[] tabFriends;
 
   /**
    * Constructeur.
@@ -110,7 +110,6 @@ public class MainController {
     this.lstEquips.add(new EquipementElec("Aquarium", 24, 365, 20));
     this.lstEquips.add(new EquipementElec("Alarme", 24, 365, 20));
     this.lstEquips.add(new EquipementElec("Serveur", 24, 365, 1300));
-
   }
 
   /**
@@ -125,18 +124,34 @@ public class MainController {
   public String createFictif() {
 
     try {
-      for (Personne person : this.lstPersons) {
-        personneDao.create(person);
-      }
-      for (Residence residence: this.lstResidences) {
-        residenceDao.create(residence);
-      }
       for (Chauffage chauffage: this.lstChauffages) {
         chauffageDao.create(chauffage);
       }
       for (EquipementElec equipementElec: this.lstEquips) {
         equipementElecDao.create(equipementElec);
       }
+      for (Residence residence: this.lstResidences) {
+        residenceDao.create(residence);
+      }
+      for (Personne person : this.lstPersons) {
+        personneDao.create(person);
+      }
+
+      //Add Friend
+      Personne pers = this.personneDao.getById(1);
+      Personne ami = this.personneDao.getById(2);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
+      ami = this.personneDao.getById(4);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
+      personneDao.update(pers);
+
+
+
+
     } catch (Exception exceptCreate){
       return "Erreur : controllers/MainController/createFictif : " + exceptCreate;
     }

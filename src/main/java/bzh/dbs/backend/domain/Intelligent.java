@@ -22,9 +22,9 @@ public class Intelligent {
   // --- Déclaration des propriétées ---
   private Long id;
   private String nom;
-  private double heureParJour;
+  private long heureParJour;
   private int jourParan;
-  private double watt;
+  private long watt;
 
   /**
    * Constructeur 1.
@@ -39,7 +39,7 @@ public class Intelligent {
    * @param jourParan : jours de fonctionnement de l'appareil par année.
    * @param watt : puissance de l'appareil en watt.
    */
-  public Intelligent(String nom, double heureParJour, int jourParan, double watt){
+  public Intelligent(String nom, long heureParJour, int jourParan, long watt){
     super();
     this.nom = nom;
     this.heureParJour = heureParJour;
@@ -51,7 +51,7 @@ public class Intelligent {
    * Fonction qui retourne la moyenne de consommation d'un appareil.
    * @return average : moyenne de consommation.
    */
-  public Double calculMoyen() {
+  public Long calculMoyen() {
     return this.heureParJour * this.jourParan * (this.watt / 1000);
   }
 
@@ -98,7 +98,7 @@ public class Intelligent {
    */
   @Column(name = "heureParJour")
   @NotNull
-  public double getHeureParJour() {
+  public long getHeureParJour() {
     return this.heureParJour;
   }
 
@@ -106,7 +106,7 @@ public class Intelligent {
    * Procédure qui permet de modifier les Heure par jour d'un appareil en fonctionnement.
    * @param heureParJour : heure par jour.
    */
-  public void setHeureParJour(double heureParJour) {
+  public void setHeureParJour(long heureParJour) {
     this.heureParJour = heureParJour;
   }
 
@@ -134,7 +134,7 @@ public class Intelligent {
    */
   @Column(name = "watt")
   @NotNull
-  public double getWatt() {
+  public long getWatt() {
     return this.watt;
   }
 
@@ -142,7 +142,7 @@ public class Intelligent {
    * Procédure qui permet de modifier la puissance en watt d'un appareil.
    * @param watt : puissance en watt.
    */
-  public void setWatt(double watt) {
+  public void setWatt(long watt) {
     this.watt = watt;
   }
 }

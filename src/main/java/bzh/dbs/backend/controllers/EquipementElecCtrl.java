@@ -47,7 +47,7 @@ public class EquipementElecCtrl {
           method = RequestMethod.POST,
           params = {"nom", "heureParJour", "jourParAn", "watt"})
   @ResponseBody
-  public String create(String nom, double heureParJour, int jourParAn, double watt) {
+  public String create(String nom, long heureParJour, int jourParAn, long watt) {
     try {
       EquipementElec EquipementElec = new EquipementElec(nom, heureParJour, jourParAn, watt);
       equipementElecDao.create(EquipementElec);

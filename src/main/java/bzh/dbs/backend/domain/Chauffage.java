@@ -31,7 +31,7 @@ public class Chauffage extends Intelligent {
    * @param jourParan : jour de fonctionnement du chauffage par année.
    * @param watt : puissance du chauffage en watt.
    */
-  public Chauffage(String nom, double heureParJour, int jourParan, double watt){
+  public Chauffage(String nom, long heureParJour, int jourParan, long watt){
     super(nom, heureParJour, jourParan, watt);
   }
 }

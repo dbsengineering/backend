@@ -32,7 +32,7 @@ public class EquipementElec extends Intelligent {
    * @param jourParan : jour de fonctionnement de l'appareil électrique par année.
    * @param watt : puissance de l'appareil électrique en watt.
    */
-  public EquipementElec(String nom, double heureParJour, int jourParan, double watt){
+  public EquipementElec(String nom, long heureParJour, int jourParan, long watt){
     super(nom, heureParJour, jourParan, watt);
   }
 
