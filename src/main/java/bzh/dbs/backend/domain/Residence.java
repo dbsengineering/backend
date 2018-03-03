@@ -25,16 +25,14 @@ public class Residence {
   private Long id;
   private double taille;
   private int nbPieces;
-  private Set<Chauffage> chauffages;
-  //private Set<EquipementElec> equipementElecs;
+  private Set<Intelligent> intelligents;
 
   /**
    * Constructeur 1. Défaut.
    */
   public Residence() {
     super();
-    this.chauffages = new HashSet<Chauffage>();
-    //this.equipementElecs = new HashSet<EquipementElec>();
+    this.intelligents = new HashSet<Intelligent>();
   }
 
   /**
@@ -55,8 +53,7 @@ public class Residence {
     super();
     this.taille = taille;
     this.nbPieces = nbPieces;
-    this.chauffages = new HashSet<Chauffage>();
-    //this.equipementElecs = new HashSet<EquipementElec>();
+    this.intelligents = new HashSet<Intelligent>();
   }
 
   /**
@@ -120,78 +117,41 @@ public class Residence {
   }
 
   /**
-   * Fonction qui retourne les chauffages de la résidence.
+   * Fonction qui retourne les appareils intelligents de la résidence.
    *
-   * @return chauffages : liste de chauffages de la résidence.
+   * @return intelligents : liste d'appareil intelligents de la résidence.
    */
   @OneToMany(cascade = {CascadeType.ALL})
-  @JoinTable(name = "residence_chauffage",
+  @JoinTable(name = "residence_intelligent",
           joinColumns = {@JoinColumn(name = "residence_id")},
-          inverseJoinColumns = {@JoinColumn(name = "chauffage_id")})
-  public Set<Chauffage> getChauffages() {
-    return this.chauffages;
+          inverseJoinColumns = {@JoinColumn(name = "intelligent_id")})
+  public Set<Intelligent> getIntelligents() {
+    return this.intelligents;
   }
 
   /**
-   * Procédure qui modifie la liste des chauffages de la résidence.
+   * Procédure qui modifie la liste des appareils intelligents de la résidence.
    *
-   * @param chauffages : liste de chauffages de la résidence.
+   * @param intelligents : liste d'appareils intelligents de la résidence.
    */
-  public void setChauffages(Set<Chauffage> chauffages) {
-    this.chauffages = chauffages;
+  public void setIntelligents(Set<Intelligent> intelligents) {
+    this.intelligents = intelligents;
   }
 
   /**
-   * Procédure qui ajoute un chauffage à la résidence
+   * Procédure qui ajoute un appareil intelligent à la résidence
    *
-   * @param chauffage : chauffage à ajouter
+   * @param intelligent : appareil intelligent à ajouter
    */
-  public void addChauffage(Chauffage chauffage) {
-    this.chauffages.add(chauffage);
+  public void addIntelligent(Intelligent intelligent) {
+    this.intelligents.add(intelligent);
   }
 
   /**
-   * Procédure qui permet de supprimer un chauffage.
-   * @param chauffage : chauffage.
+   * Procédure qui permet de supprimer un appareil intelligent.
+   * @param intelligent : appareil intelligent.
    */
-  public void deleteChauffage(Chauffage chauffage){
-    this.chauffages.remove(chauffage);
+  public void deleteIntelligent(Intelligent intelligent){
+    this.intelligents.remove(intelligent);
   }
-
-  /**
-   * Fonction qui retourne la liste d'équipements électriques de la résidence.
-   *
-   * @return equipementElecs : liste d'équipements électriques.
-   */
-  /*@OneToMany(targetEntity = EquipementElec.class, cascade = {CascadeType.ALL}, orphanRemoval = true)
-  @JoinColumn(name = "id")
-  public Set<EquipementElec> getEquipementElecs() {
-    return this.equipementElecs;
-  }*/
-
-  /**
-   * Procédure qui modifie la liste des équipements électriques de la résidence.
-   *
-   * @param equipementElecs : liste d'équipements électriques.
-   */
-  /*public void setEquipementElecs(Set<EquipementElec> equipementElecs) {
-    this.equipementElecs = equipementElecs;
-  }*/
-
-  /**
-   * Procédure qui ajoute un équipement électrique.
-   * @param equipementElec : équipement électrique à ajouter.
-   */
-  /*public void addEquipementE(EquipementElec equipementElec){
-    this.equipementElecs.add(equipementElec);
-  }*/
-
-  /**
-   * Procédure qui permet de supprimer un équipement électrique.
-   * @param equipementElec : équipement électrique.
-   */
-  /*public void deleteEquipementElec(EquipementElec equipementElec){
-    this.equipementElecs.remove(equipementElec);
-  }*/
-
 }

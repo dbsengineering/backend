@@ -1,7 +1,9 @@
 package bzh.dbs.backend.controllers;
 
+import bzh.dbs.backend.dao.IntelligentDao;
 import bzh.dbs.backend.dao.PersonneDao;
-import bzh.dbs.backend.dao.ResidenceDao;
+import bzh.dbs.backend.dao.ResidenceDao;;
+import bzh.dbs.backend.domain.Intelligent;
 import bzh.dbs.backend.domain.Personne;
 import bzh.dbs.backend.domain.Residence;
 import java.util.List;
@@ -26,6 +28,8 @@ public class ResidenceCtrl {
   private ResidenceDao residenceDao;
   @Autowired
   private PersonneDao personneDao;
+  @Autowired
+  private IntelligentDao intelligentDao;
 
   /**
    * Fonction qui retourne toutes les residences.
@@ -62,28 +66,28 @@ public class ResidenceCtrl {
   }
 
   /**
-   * Fonction qui permet d'ajouter un chauffage à une résidence par leur id.
+   * Fonction qui permet d'ajouter un appareil intelligent à une résidence par leur id.
    * La fonction retourne un message de confirmation.
    * @param id : id de la résidence.
-   * @param idChauff: id du chauffage.
+   * @param idAppIntell: id de l'appareil intelligent.
    * @return String : message de confirmation.
    */
   @RequestMapping(
-          value = "/addChauffage",
+          value = "/addAppIntell",
           method = RequestMethod.POST,
-          params = {"id", "iChauff"})
+          params = {"id", "idAppIntell"})
   @ResponseBody
-  public String addChauffage(long id, long idChauff) {
+  public String addAppIntell(long id, long idAppIntell) {
     try {
       Residence residence = residenceDao.getById(id);
-      //Chauffage chauffage = chauffage
-      //residence.addResidence(residence);
-      //personneDao.update(personne);
-    } catch (Exception exceptAddChauffage) {
-      return "controllers/ResidenceCtrl/addChauffage : Erreur d'ajout du chauffage : "
-              + exceptAddChauffage.toString();
+      Intelligent intelligent = intelligentDao.getById(idAppIntell);
+      residence.addIntelligent(intelligent);
+      residenceDao.update(residence);
+    } catch (Exception exceptAddAppIntell) {
+      return "controllers/ResidenceCtrl/addAppIntell : Erreur d'ajout d'un appareil intelligent : "
+              + exceptAddAppIntell.toString();
     }
-    return "Ajout du chauffage réussie !";
+    return "Ajout d'un appareil intelligent réussie !";
   }
 
   /**

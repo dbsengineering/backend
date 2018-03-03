@@ -96,7 +96,7 @@ public class ChauffageCtrl {
     try {
       Chauffage chauffage = chauffageDao.getById(id);
       chauffage.setNom(nom);
-     chauffageDao.update(chauffage);
+      chauffageDao.update(chauffage);
     } catch (Exception exceptUpdName) {
       return "controllers/ChauffageCtrl/updateName : Erreur de mise à jours du nom : "
               + exceptUpdName.toString();
