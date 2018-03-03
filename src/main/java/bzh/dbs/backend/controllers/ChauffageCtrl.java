@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 
 /**
- * Classe PersonneCtrl.
- * Controleur de la classe Personne.
+ * Classe ChauffageCtrl.
+ * Controleur de la classe Chauffage.
  * @author Jérémy Cavron
  * @version 1.0
  */
