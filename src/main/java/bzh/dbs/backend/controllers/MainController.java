@@ -1,9 +1,6 @@
 package bzh.dbs.backend.controllers;
 
-import bzh.dbs.backend.dao.ChauffageDao;
-import bzh.dbs.backend.dao.IntelligentDao;
-import bzh.dbs.backend.dao.PersonneDao;
-import bzh.dbs.backend.dao.ResidenceDao;
+import bzh.dbs.backend.dao.*;
 import bzh.dbs.backend.domain.Chauffage;
 import bzh.dbs.backend.domain.EquipementElec;
 import bzh.dbs.backend.domain.Personne;
@@ -36,6 +33,8 @@ public class MainController {
   private IntelligentDao intelligentDao;
   @Autowired
   private ChauffageDao chauffageDao;
+  @Autowired
+  private EquipementElecDao equipementElecDao;
   private List<Personne> lstPersons;
   private List<Residence> lstResidences;
   private List<Chauffage> lstChauffages;
@@ -70,10 +69,47 @@ public class MainController {
     this.lstResidences.add(new Residence(1, 300));
 
     this.lstChauffages = new ArrayList<Chauffage>();
+    this.lstChauffages.add(new Chauffage("Salon", 8, 200, 1000));
+    this.lstChauffages.add(new Chauffage("Salon", 7, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salon", 8, 246, 1000));
+    this.lstChauffages.add(new Chauffage("Salon", 7, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salon", 8, 200, 1000));
+    this.lstChauffages.add(new Chauffage("Salon", 7, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salon", 8, 212, 1000));
+    this.lstChauffages.add(new Chauffage("Salon", 7, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salon", 8, 200, 1000));
+    this.lstChauffages.add(new Chauffage("Salon", 7, 245, 900));
+
+    this.lstChauffages.add(new Chauffage("Salle de bain", 3, 200, 750));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 4, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 5, 200, 400));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 2, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 6, 200, 1000));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 8, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 1, 200, 1200));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 7, 245, 900));
+    this.lstChauffages.add(new Chauffage("Salle de bain", 10, 245, 900));
+
+    this.lstChauffages.add(new Chauffage("Séjour", 15, 200, 750));
+    this.lstChauffages.add(new Chauffage("Séjour", 14, 245, 900));
+    this.lstChauffages.add(new Chauffage("Séjour", 13, 200, 400));
+    this.lstChauffages.add(new Chauffage("Séjour", 18, 245, 900));
+    this.lstChauffages.add(new Chauffage("Séjour", 16, 200, 1000));
+    this.lstChauffages.add(new Chauffage("Séjour", 20, 245, 900));
+    this.lstChauffages.add(new Chauffage("Séjour", 18, 200, 1200));
+    this.lstChauffages.add(new Chauffage("Séjour", 17, 245, 900));
+    this.lstChauffages.add(new Chauffage("Séjour", 16, 245, 900));
 
     this.lstEquips = new ArrayList<EquipementElec>();
-
-
+    this.lstEquips.add(new EquipementElec("Serveur", 24, 365, 1300));
+    this.lstEquips.add(new EquipementElec("Ordinateur", 3, 300, 1000));
+    this.lstEquips.add(new EquipementElec("Télé", 2, 325, 200));
+    this.lstEquips.add(new EquipementElec("GoogleHome", 24, 365, 5));
+    this.lstEquips.add(new EquipementElec("Lampe salon", 8, 245, 75));
+    this.lstEquips.add(new EquipementElec("Lampe séjour", 8, 278, 45));
+    this.lstEquips.add(new EquipementElec("Aquarium", 24, 365, 20));
+    this.lstEquips.add(new EquipementElec("Alarme", 24, 365, 20));
+    this.lstEquips.add(new EquipementElec("Serveur", 24, 365, 1300));
 
   }
 
@@ -94,6 +130,12 @@ public class MainController {
       }
       for (Residence residence: this.lstResidences) {
         residenceDao.create(residence);
+      }
+      for (Chauffage chauffage: this.lstChauffages) {
+        chauffageDao.create(chauffage);
+      }
+      for (EquipementElec equipementElec: this.lstEquips) {
+        equipementElecDao.create(equipementElec);
       }
     } catch (Exception exceptCreate){
       return "Erreur : controllers/MainController/createFictif : " + exceptCreate;

@@ -52,7 +52,7 @@ public class Intelligent {
    * @return average : moyenne de consommation.
    */
   public Double calculMoyen() {
-    return heureParJour * jourParan * (watt / 1000);
+    return this.heureParJour * this.jourParan * (this.watt / 1000);
   }
 
   /**
