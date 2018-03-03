@@ -14,8 +14,13 @@ Allows you to compare the consumption of your home's electrical equipment with y
 
 ## Getting Started
 
-Download this project. open with IntelliJ. Change database name in resources/application.properties
-Click on start. It's working
+- Download this project. 
+- Open with IntelliJ.
+- Change database name in resources/application.properties
+- Change "spring.jpa.hibernate.ddl-auto" parameter in "application.properties" if you want keep data
+- Click on start. It's working
+
+- Origin the "spring.jpa.hibernate.ddl-auto" paramter is on create-drop. You can create fictif data in MainController command
 
 ### Prerequisites
 
