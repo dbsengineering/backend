@@ -1,10 +1,7 @@
 package bzh.dbs.backend.controllers;
 
 import bzh.dbs.backend.dao.*;
-import bzh.dbs.backend.domain.Chauffage;
-import bzh.dbs.backend.domain.EquipementElec;
-import bzh.dbs.backend.domain.Personne;
-import bzh.dbs.backend.domain.Residence;
+import bzh.dbs.backend.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -147,9 +144,37 @@ public class MainController {
       ami.addAmi(pers);
       pers.addAmi(ami);
       personneDao.update(ami);
+      ami = this.personneDao.getById(5);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
+      ami = this.personneDao.getById(6);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
       personneDao.update(pers);
 
+      pers = this.personneDao.getById(2);
+      ami = this.personneDao.getById(3);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
+      ami = this.personneDao.getById(4);
+      ami.addAmi(pers);
+      pers.addAmi(ami);
+      personneDao.update(ami);
+      personneDao.update(pers);
 
+      //Add Residence
+      pers = this.personneDao.getById(1);
+      Residence resid = this.residenceDao.getById(1);
+      pers.addResidence(resid);
+      personneDao.update(pers);
+
+      //Add intelligent
+      Intelligent inte = intelligentDao.getById(1);
+      resid.addIntelligent(inte);
+      intelligentDao.update(inte);
 
 
     } catch (Exception exceptCreate){
