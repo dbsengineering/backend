@@ -16,15 +16,17 @@ Allows you to compare the consumption of your home's electrical equipment with y
 
 - Download this project. 
 - Open with IntelliJ.
-- Change database name in resources/application.properties
-- Change "spring.jpa.hibernate.ddl-auto" parameter in "application.properties" if you want keep data
-- Click on start. It's working
+- Open for exemple Wamp and create database name.
+- Change database name in resources/application.properties.
+- Change "spring.jpa.hibernate.ddl-auto" parameter in "resources/application.properties" to "update" if you want keep data. 
+- Click on start. It's working.
+- Beginin click on main-controller command in WEB UI [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html).
 
-- Origin the "spring.jpa.hibernate.ddl-auto" paramter is on create-drop. You can create fictif data in MainController command
+- Origin the "spring.jpa.hibernate.ddl-auto" paramter in "resources/application.properties" is on create-drop. You can create fictif data in MainController command.
 
 ### Prerequisites
 
-to have data base sql and Maven installed. If not show the dependency in file
+To have data base sql and Maven installed. If not show the dependency in file.
 
 
 ### Installing
