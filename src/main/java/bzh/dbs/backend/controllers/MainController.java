@@ -65,15 +65,19 @@ public class MainController {
    * intelligents fictifs dans la base de données.
    * @return string : Message de confirmation.
    */
-  @RequestMapping("/")
+  @RequestMapping(
+          value = "/",
+          method = RequestMethod.POST)
   @ResponseBody
-  public String index() {
+  public String createFictif() {
 
-    for (Personne person : this.lstPersons) {
-      personneDao.create(person);
+    try {
+      for (Personne person : this.lstPersons) {
+        personneDao.create(person);
+      }
+    } catch (Exception exceptCreate){
+      return "Erreur : controllers/MainController/createFictif : " + exceptCreate;
     }
-
-
     return "Création réussite";
   }
 
