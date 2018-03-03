@@ -2,8 +2,76 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b016866e-9312-4509-bb5c-cabdb96f1ae9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/MainController.java" afterPath="$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/MainController.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/bzh/dbs/backend/controllers/MainController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/DOC/allclasses-frame.html" afterPath="$PROJECT_DIR$/DOC/allclasses-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/allclasses-noframe.html" afterPath="$PROJECT_DIR$/DOC/allclasses-noframe.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/Application.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/Application.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/class-use/Application.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/class-use/Application.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/SwaggerConfig.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/SwaggerConfig.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/class-use/SwaggerConfig.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/class-use/SwaggerConfig.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/config/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/MainController.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/MainController.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/PersonneCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/PersonneCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/ResidenceCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/ResidenceCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/MainController.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/MainController.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/PersonneCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/PersonneCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/ResidenceCtrl.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/class-use/ResidenceCtrl.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/controllers/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/PersonneDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/PersonneDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/ResidenceDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/ResidenceDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/PersonneDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/PersonneDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/ResidenceDao.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/class-use/ResidenceDao.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/dao/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Chauffage.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Chauffage.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/EquipementElec.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/EquipementElec.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Intelligent.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Intelligent.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Personne.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Personne.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Residence.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/Residence.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Chauffage.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Chauffage.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/EquipementElec.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/EquipementElec.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Intelligent.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Intelligent.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Personne.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Personne.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Residence.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/class-use/Residence.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/domain/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-frame.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-summary.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-tree.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-use.html" afterPath="$PROJECT_DIR$/DOC/bzh/dbs/backend/package-use.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/constant-values.html" afterPath="$PROJECT_DIR$/DOC/constant-values.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/deprecated-list.html" afterPath="$PROJECT_DIR$/DOC/deprecated-list.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/help-doc.html" afterPath="$PROJECT_DIR$/DOC/help-doc.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-1.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-1.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-10.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-10.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-11.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-11.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-12.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-12.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-2.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-2.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-3.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-3.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-4.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-4.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-5.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-5.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-6.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-6.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-7.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-7.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-8.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-8.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index-files/index-9.html" afterPath="$PROJECT_DIR$/DOC/index-files/index-9.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/index.html" afterPath="$PROJECT_DIR$/DOC/index.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/member-search-index.js" afterPath="$PROJECT_DIR$/DOC/member-search-index.js" />
+      <change beforePath="$PROJECT_DIR$/DOC/member-search-index.zip" afterPath="$PROJECT_DIR$/DOC/member-search-index.zip" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-frame.html" afterPath="$PROJECT_DIR$/DOC/overview-frame.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-summary.html" afterPath="$PROJECT_DIR$/DOC/overview-summary.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/overview-tree.html" afterPath="$PROJECT_DIR$/DOC/overview-tree.html" />
+      <change beforePath="$PROJECT_DIR$/DOC/package-search-index.zip" afterPath="$PROJECT_DIR$/DOC/package-search-index.zip" />
+      <change beforePath="$PROJECT_DIR$/DOC/type-search-index.js" afterPath="$PROJECT_DIR$/DOC/type-search-index.js" />
+      <change beforePath="$PROJECT_DIR$/DOC/type-search-index.zip" afterPath="$PROJECT_DIR$/DOC/type-search-index.zip" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +94,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="110" column="30" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="110" selection-end-column="30" />
+              <caret line="110" column="30" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="110" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1081#1082#0" expanded="true" />
@@ -40,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="244">
-              <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+              <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1239#1240#0" expanded="true" />
@@ -54,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ChauffageCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1383">
-              <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+              <caret line="96" column="53" lean-forward="false" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#938#939#0" expanded="true" />
@@ -67,8 +135,8 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="167" column="21" lean-forward="true" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
+            <state relative-caret-position="487">
+              <caret line="167" column="21" lean-forward="false" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,7 +148,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/dao/EquipementElecDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="561">
-              <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+              <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#853#854#0" expanded="true" />
@@ -96,7 +164,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Intelligent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="584">
-              <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+              <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1415#1416#0" expanded="true" />
@@ -130,7 +198,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/IntelligentCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+              <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#973#974#0" expanded="true" />
@@ -144,7 +212,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/EquipementElecCtrl.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="47" column="64" lean-forward="true" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
+              <caret line="47" column="64" lean-forward="false" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#989#990#0" expanded="true" />
@@ -507,12 +575,12 @@
       <workItem from="1519918600995" duration="28251000" />
       <workItem from="1519973115180" duration="4151000" />
       <workItem from="1519984747189" duration="1403000" />
-      <workItem from="1520066791759" duration="14876000" />
+      <workItem from="1520066791759" duration="14971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54451000" />
+    <option name="totallyTimeSpent" value="54546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -534,9 +602,9 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979852" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3552492" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -544,6 +612,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -552,7 +621,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -618,7 +686,7 @@
         <state relative-caret-position="765">
           <caret line="52" column="48" lean-forward="true" selection-start-line="52" selection-start-column="48" selection-end-line="52" selection-end-column="48" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#854#855#0" expanded="false" />
             <element signature="e#929#930#0" expanded="false" />
             <element signature="e#1770#1771#0" expanded="false" />
@@ -634,7 +702,7 @@
         <state relative-caret-position="544">
           <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#854#855#0" expanded="false" />
             <element signature="e#929#930#0" expanded="false" />
             <element signature="e#1770#1771#0" expanded="false" />
@@ -812,7 +880,7 @@
         <state relative-caret-position="850">
           <caret line="59" column="31" lean-forward="false" selection-start-line="56" selection-start-column="4" selection-end-line="59" selection-end-column="31" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#854#855#0" expanded="false" />
             <element signature="e#929#930#0" expanded="false" />
             <element signature="e#1770#1771#0" expanded="false" />
@@ -826,11 +894,11 @@
         <state relative-caret-position="210">
           <caret line="59" column="53" lean-forward="true" selection-start-line="59" selection-start-column="53" selection-end-line="59" selection-end-column="53" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#1334#1335#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#796#797#0" expanded="false" />
+            <element signature="e#872#873#0" expanded="false" />
+            <element signature="e#1334#1335#0" expanded="false" />
+            <element signature="e#1390#1391#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -875,27 +943,27 @@
         <state relative-caret-position="1876">
           <caret line="140" column="5" lean-forward="true" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1476#1477#0" expanded="true" />
-            <element signature="e#1500#1501#0" expanded="true" />
-            <element signature="e#1646#1647#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-            <element signature="e#1854#1855#0" expanded="true" />
-            <element signature="e#1882#1883#0" expanded="true" />
-            <element signature="e#2052#2053#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
-            <element signature="e#2286#2287#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
-            <element signature="e#2497#2498#0" expanded="true" />
-            <element signature="e#2531#2532#0" expanded="true" />
-            <element signature="e#2961#2962#0" expanded="true" />
-            <element signature="e#2995#2996#0" expanded="true" />
-            <element signature="e#3231#3232#0" expanded="true" />
-            <element signature="e#3273#3274#0" expanded="true" />
-            <element signature="e#3469#3470#0" expanded="true" />
-            <element signature="e#3513#3514#0" expanded="true" />
-            <element signature="e#3696#3697#0" expanded="true" />
-            <element signature="e#3743#3744#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1476#1477#0" expanded="false" />
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1646#1647#0" expanded="false" />
+            <element signature="e#1668#1669#0" expanded="false" />
+            <element signature="e#1854#1855#0" expanded="false" />
+            <element signature="e#1882#1883#0" expanded="false" />
+            <element signature="e#2052#2053#0" expanded="false" />
+            <element signature="e#2082#2083#0" expanded="false" />
+            <element signature="e#2286#2287#0" expanded="false" />
+            <element signature="e#2316#2317#0" expanded="false" />
+            <element signature="e#2497#2498#0" expanded="false" />
+            <element signature="e#2531#2532#0" expanded="false" />
+            <element signature="e#2961#2962#0" expanded="false" />
+            <element signature="e#2995#2996#0" expanded="false" />
+            <element signature="e#3231#3232#0" expanded="false" />
+            <element signature="e#3273#3274#0" expanded="false" />
+            <element signature="e#3469#3470#0" expanded="false" />
+            <element signature="e#3513#3514#0" expanded="false" />
+            <element signature="e#3696#3697#0" expanded="false" />
+            <element signature="e#3743#3744#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -905,11 +973,11 @@
         <state relative-caret-position="284">
           <caret line="57" column="11" lean-forward="true" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#837#838#0" expanded="true" />
-            <element signature="e#915#916#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#837#838#0" expanded="false" />
+            <element signature="e#915#916#0" expanded="false" />
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1222#1223#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -919,9 +987,9 @@
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#539#540#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#539#540#0" expanded="false" />
+            <element signature="e#556#557#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -931,9 +999,9 @@
         <state relative-caret-position="301">
           <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#565#566#0" expanded="true" />
-            <element signature="e#582#583#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#582#583#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -943,11 +1011,11 @@
         <state relative-caret-position="465">
           <caret line="42" column="43" lean-forward="true" selection-start-line="42" selection-start-column="43" selection-end-line="42" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
-            <element signature="e#872#873#0" expanded="true" />
-            <element signature="e#1324#1325#0" expanded="true" />
-            <element signature="e#1380#1381#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#796#797#0" expanded="false" />
+            <element signature="e#872#873#0" expanded="false" />
+            <element signature="e#1324#1325#0" expanded="false" />
+            <element signature="e#1380#1381#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -955,7 +1023,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/EquipementElecCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="47" column="64" lean-forward="true" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
+          <caret line="47" column="64" lean-forward="false" selection-start-line="47" selection-start-column="64" selection-end-line="47" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#989#990#0" expanded="true" />
@@ -967,7 +1035,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/dao/EquipementElecDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="51" lean-forward="true" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
+          <caret line="33" column="51" lean-forward="false" selection-start-line="33" selection-start-column="51" selection-end-line="33" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#853#854#0" expanded="true" />
@@ -981,7 +1049,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/PersonneCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="110" column="30" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="110" selection-end-column="30" />
+          <caret line="110" column="30" lean-forward="false" selection-start-line="105" selection-start-column="6" selection-end-line="110" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1081#1082#0" expanded="true" />
@@ -993,7 +1061,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ResidenceCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
-          <caret line="130" column="41" lean-forward="true" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
+          <caret line="130" column="41" lean-forward="false" selection-start-line="130" selection-start-column="41" selection-end-line="130" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1239#1240#0" expanded="true" />
@@ -1005,7 +1073,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/domain/Intelligent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="584">
-          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <caret line="43" column="19" lean-forward="false" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1415#1416#0" expanded="true" />
@@ -1037,7 +1105,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/IntelligentCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
+          <caret line="27" column="59" lean-forward="false" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#973#974#0" expanded="true" />
@@ -1049,7 +1117,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/ChauffageCtrl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1383">
-          <caret line="96" column="53" lean-forward="true" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
+          <caret line="96" column="53" lean-forward="false" selection-start-line="96" selection-start-column="53" selection-end-line="96" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#938#939#0" expanded="true" />
@@ -1060,8 +1128,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/bzh/dbs/backend/controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="167" column="21" lean-forward="true" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
+        <state relative-caret-position="487">
+          <caret line="167" column="21" lean-forward="false" selection-start-line="167" selection-start-column="21" selection-end-line="167" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
