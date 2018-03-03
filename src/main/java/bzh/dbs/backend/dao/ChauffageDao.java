@@ -27,7 +27,7 @@ public class ChauffageDao {
   /**
    * Fonction qui retourne une liste de toutes les chauffages.
    *
-   * @return Residence : ensemble de chauffages
+   * @return Chauffages : ensemble de chauffages
    */
   @SuppressWarnings("unchecked")
   public List<Chauffage> getAll() {
@@ -37,7 +37,7 @@ public class ChauffageDao {
   /**
    * Fonction qui crée un nouveau chauffage et retourne ce
    * dernier.
-   * @param chauffage : résidence à créer.
+   * @param chauffage : chauffageà créer.
    * @return
    */
   public void create(Chauffage chauffage) {

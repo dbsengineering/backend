@@ -48,15 +48,32 @@ public class MainController {
   public MainController(){
     //Initialisation des listes
     this.lstPersons = new ArrayList<Personne>();
-    this.lstResidences = new ArrayList<Residence>();
-    this.lstChauffages = new ArrayList<Chauffage>();
-    this.lstEquips = new ArrayList<EquipementElec>();
-
-    this.lstPersons.add(new Personne("Cavron", "Jérémy", "jerem.cav@gmail.com"));
+    this.lstPersons.add(new Personne("Cavron", "Jérémy", "jeremy.cav@gmail.com"));
     this.lstPersons.add(new Personne("Dupont", "Olivier", "olivier.dupont@gmail.com"));
     this.lstPersons.add(new Personne("Hadock", "Tintin", "tintin.hadock@gmail.com"));
     this.lstPersons.add(new Personne("Skywalker", "Luc", "luc.skywalker@gmail.com"));
     this.lstPersons.add(new Personne("Skywalker", "Luc", "luc.skywalker@gmail.com"));
+    this.lstPersons.add(new Personne("Lewis", "Karl", "karl.lewis@gmail.com"));
+    this.lstPersons.add(new Personne("Capitaine", "Flamme", "capitaine.flamme@gmail.com"));
+    this.lstPersons.add(new Personne("Tom", "Sawer", "tom.sawer@gmail.com"));
+    this.lstPersons.add(new Personne("Mini", "Pouce", "mini.pouce@gmail.com"));
+
+    this.lstResidences = new ArrayList<Residence>();
+    this.lstResidences.add(new Residence(1000, 10));
+    this.lstResidences.add(new Residence(200, 7));
+    this.lstResidences.add(new Residence(450, 6));
+    this.lstResidences.add(new Residence(600, 9));
+    this.lstResidences.add(new Residence(546, 5));
+    this.lstResidences.add(new Residence(352, 3));
+    this.lstResidences.add(new Residence(845, 10));
+    this.lstResidences.add(new Residence(954, 7));
+    this.lstResidences.add(new Residence(1, 300));
+
+    this.lstChauffages = new ArrayList<Chauffage>();
+
+    this.lstEquips = new ArrayList<EquipementElec>();
+
+
 
   }
 
@@ -75,11 +92,12 @@ public class MainController {
       for (Personne person : this.lstPersons) {
         personneDao.create(person);
       }
+      for (Residence residence: this.lstResidences) {
+        residenceDao.create(residence);
+      }
     } catch (Exception exceptCreate){
       return "Erreur : controllers/MainController/createFictif : " + exceptCreate;
     }
     return "Création réussite";
   }
-
-
 }
