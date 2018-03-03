@@ -7,6 +7,8 @@ import bzh.dbs.backend.domain.Intelligent;
 import bzh.dbs.backend.domain.Personne;
 import bzh.dbs.backend.domain.Residence;
 import java.util.List;
+
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -114,6 +116,32 @@ public class ResidenceCtrl {
               + exceptDeletepers.toString();
     }
     return "Suppression de residence réussie !";
+  }
+
+  /**
+   * Fonction qui permet de supprimer un appareil intelligent d'une résidence
+   * et retourne un message de confirmation.
+   * @param id : id de la residence à supprimer.
+   * @param idAppIntell : id de l'appareil intelligent de la residence.
+   * @return String : message de confirmation
+   */
+  @RequestMapping(
+          value = "/deleteAppIntell",
+          method = RequestMethod.DELETE,
+          params = {"id", "idAppIntell"})
+  @ResponseBody
+  public String deleteAppIntell(long id, long idAppIntell) {
+    try {
+      Residence residence = residenceDao.getById(id);
+      Intelligent intelligent = intelligentDao.getById(idAppIntell);
+      residence.deleteIntelligent(intelligent);
+      residenceDao.update(residence);
+    } catch (Exception exceptDeleteAppIntell) {
+      return "controllers/ResidenceCtrl/deleteAppIntell : Erreur de suppresion de " +
+              "l'appareil intelligent de la residence : "
+              + exceptDeleteAppIntell.toString();
+    }
+    return "Suppression de l'appareil intelligent de residence réussie !";
   }
 
   /**

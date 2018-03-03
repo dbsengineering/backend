@@ -57,4 +57,14 @@ public class IntelligentDao {
     }
     return;
   }
+
+  /**
+   * Procédure de mise à jours d'un appareil intelligent.
+   *
+   * @param intelligent : appareil intelligent mise à jours.
+   */
+  public void update(Intelligent intelligent) {
+    entityManager.merge(intelligent);
+    return;
+  }
 }
